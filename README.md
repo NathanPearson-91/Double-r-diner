@@ -151,12 +151,10 @@ For ease, above the fold is shown with a #FEFCE0 background, and below the fold 
 
 | Page | Mobile | Tablet | Desktop|
 |---|---|---|---|
-| Home | link here | link here | link here |
-| Menu | link here | link here | link here |
-| About | link here | link here | link here |
-| Contact | link here | link here | link here |
-
-[Note for future me: I need to make sure I update this if the finished site deliberately departed from the wireframes and why.]
+| Home | [link](/assets/images/readme/wireframes/home-mobile.png) | [link](/assets/images/readme/wireframes/home-tablet.png) | [link](/assets/images/readme/wireframes/homepage-desktop.png) |
+| Menu | [link](/assets/images/readme/wireframes/menu-mobile.png) | [link](/assets/images/readme/wireframes/menu-tablet.png) | [link](/assets/images/readme/wireframes/menu-desktop.png) |
+| About | [link](/assets/images/readme/wireframes/about-mobile.png) | [link](/assets/images/readme/wireframes/about-tablet.png) | [link](/assets/images/readme/wireframes/about-desktop.png) |
+| Contact | [link](/assets/images/readme/wireframes/contact-mobile.png) | [link](/assets/images/readme/wireframes/contact-tablet.png) | [link](/assets/images/readme/wireframes/contact-desktop.png) |
 
 ### Surface
 
