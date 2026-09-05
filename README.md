@@ -122,11 +122,13 @@ The site is built as four content pages plus a 404 page. Content is assigned to 
 
 **404** page will catch visitors who accidentally reach a non-existent page and returns them to the site without requiring the use of the browsers back button. 
 
+```
 HOME
 |_ MENU
 |_ ABOUT
 |_ CONACT
-404 
+404
+```
 
 ##### Repeated Content
 Opening hours and the Diner's address appear in the footer of every page as well as their dedicated sections. This is deliberate, as stories 2, 3 and 4 require this information to be available without having to hunt for it, and a visitor who lands directly on the Menu page from a search result should not have to navigate elsewhere to find out whether the Diner is open. 
