@@ -104,11 +104,11 @@ The site is built as four content pages plus a 404 page. Content is assigned to 
 - Hero: Diner name, tagline or review, locations *(Stories 1, 3)*
 - Opening hours *(Stories 2, 4)*
 - Address summary and map *(Story 3)*
-- Signposting to Menu and About
+- Signposting to Menu and About (Menu is the primary decision making content for a first time visitor, and so I've opted for an unequal split to give it more visual weight.)
 
 **Menu** showcases the full offering clearly and without assuming any local knowledge. Every item is priced and described so that a first time visitor can assess the diner on the same terms as a regular. 
 - Sectioned menu with prices and descriptions *(Stories 1, 6)*
-- Regular specials section *(Story 5)*
+- Regular specials section *(Story 5)* (This section presents a fixed rotation of specials for each day of the week. This is an explicit design choice as a static site cannot determine the current day.)
 
 **About** differentiates the Diner from chain competitors by giving it a history and a face. This page will cover who runs it, how long it has been there, and the vital role it plays as a gathering place for the town. 
 - History and the people behind the Diner *(Story 7)*
@@ -146,6 +146,8 @@ Within each page, content is ordered by inferred decision-relevance instead of n
 #### Wireframes
 
 Wireframes were created for all pages at three breakpoints before any code was written. 
+
+For ease, above the fold is shown with a #FEFCE0 background, and below the fold is shown with a #EBEBEB background. 
 
 | Page | Mobile | Tablet | Desktop|
 |---|---|---|---|
