@@ -159,6 +159,67 @@ Wireframes were created for all pages at three breakpoints before any code was w
 ### Surface
 
 #### Colour Scheme
+For the colour palette, inspiration was drawn from the diner itself. The red and black of the signage, the dark wood panelling and red vinyl booths from the interior and the warm amber from the lamps and neon against the Washington night sky. Cream stands in for the paper menu, and provides a background warm enough to comfortably sit against the wood tones (pure white would feel too clinical and defeat the period feel of the brand).
 
 | Colour | Hex | Used for |
 |---|---|---|
+| Diner Red | #C1121F | Section backgrounds, buttons and banners. Surface colour only. |
+| Deep Red | #8B0F17 | Red text, headings, links. Text colour only. |
+| Ink | #14100E | Body text on light backgrounds, dark section backgrounds. |
+| Wood | #3B2417 | Secondary dark background colour, footer. |
+| Cream | #F7F1E3 | Default page background, text on dark backgrounds. |
+| Sign Yellow | #F2C94C | Highlights and accents for dark backgrounds only. |
+| Amber | #E9A319 | Warm accent for dark backgrounds only. |
+
+I have deliberately chosen two distinct reds (Diner Red and Deep Red). The brighter of the two is used as a background for other elements to sit on, whereas the darker red is used as text. This keeps the brand colour present across the site without any text falling short of WCAG AA.
+
+#### Contrast Ratios
+All combinations used have been tested with the WebAIM Contrast Checker. Body text meets AA (4.5:1) as a minimum but most combinations meet AAA (7:1)
+
+| Foreground | Background | Ratio | WCAG |
+|---|---|---|---|
+| Ink #14100E | Cream #F7F1E3 | 16.80:1 | [AAA](https://webaim.org/resources/contrastchecker/?fcolor=14100E&bcolor=F7F1E3) |
+| Wood #3B2417 | Cream #F7F1E3 | 12.85:1 | [AAA](https://webaim.org/resources/contrastchecker/?fcolor=3B2417&bcolor=F7F1E3) |
+| Cream #F7F1E3 | Wood #3B2417 | 12.85:1 | [AAA](https://webaim.org/resources/contrastchecker/?fcolor=F7F1E3&bcolor=3B2417) |
+| Sign Yellow #F2C94C | Ink #14100E | 11.92:1 | [AAA](https://webaim.org/resources/contrastchecker/?fcolor=F2C94C&bcolor=14100E) |
+| Sign Yellow #F2C94C | Wood #3B2417 | 9.12:1 | [AAA](https://webaim.org/resources/contrastchecker/?fcolor=F2C94C&bcolor=3B2417) |
+| Deep Red #8B0F17 | Cream #F7F1E3 | 8.56:1 | [AAA](https://webaim.org/resources/contrastchecker/?fcolor=8B0F17&bcolor=F7F1E3) |
+| Amber #E9A319 | Ink #14100E | 8.75:1 | [AAA](https://webaim.org/resources/contrastchecker/?fcolor=E9A319&bcolor=14100E) |
+| White #FFFFFF | Diner Red #C1121F | 6.22:1 | [AA](https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=C1121F) |
+| Cream #F7F1E3 | Diner Red #C1121F | 5.53:1 | [AA](https://webaim.org/resources/contrastchecker/?fcolor=F7F1E3&bcolor=C1121F) |
+
+Two colour combinations were tested but rejected. Diner red on Ink returns 3.03:1 [which fails AA](https://webaim.org/resources/contrastchecker/?fcolor=C1121F&bcolor=14100E) for body text despite being the most visually charateristic pairing available with the palette (the look of red neon against a night sky). Therefore it will only be used at large display sizes where the threshold of 3:1 applies, with Sign Yellow used in its place for anything smaller. 
+
+Amber on Cream [returns 1.91:1](https://webaim.org/resources/contrastchecker/?fcolor=E9A319&bcolor=F7F1E3) and is therefore not used at all. Amber functions only as a glow against dark surfaces.
+
+#### Typography
+Two typefaces are used for this site, both available from Google Fonts. 
+
+- [**Alfa Slab One**](https://fonts.google.com/specimen/Alfa+Slab+One?preview.script=Latn) is used for headings and the site wordmark. It is a heavy slab serif that invokes the hand-painted signage and menu boards of mid-century modern American roadside diners. Used sparingly, and at large sizes, where its weight shows character rather than mess. 
+- [**Karla**](https://fonts.google.com/specimen/Karla?query=Karla&preview.script=Latn) is used for body copy, navigation and menu items. It is a humanist sans-serif chosen for its legibility at small sizes, especially on the Menu page where item descriptions and prices need to be scanned quickly. It is neutral enough not to compete with the display font face. 
+
+Fallback font stacks are specified throughout so that the site remains readable in the circumstance that the web fonts fail to load. 
+
+```css
+--font-display: 'Alfa Slab One', Georgia, 'Times New Roman', serif;
+--font-body: 'Karla', 'Helvetica Neue', Arial, sans-serif;
+```
+
+#### Imagery
+Photography needed to carry the warmtht that the chosen palette established: interior photograhs of the booths and counter, close detailing of the pie and coffee that the Diner is known for, and the exterior at dusk. Images are there to support the content, not decorate it. The Menu page uses food photography where possible to make the offering feel real, and the About page uses interior and exterior photographs to show the Diner's place in the town. 
+
+All images are used at a sufficient resolution to avoid pixelation and are constrained by aspect ratio rather than stretched to fit their containers. 
+
+Where text appears over a photograph, a semi-transparent dark overlay is applied to make sure that the text meets the same contrast requirements as elsewhere on the site. No text is placed directly over an unmodified photograph. 
+
+#### Accessibility Considerations
+
+- All non-text elements carry descriptive `alt` attributes: decorative images use an empty `alt` so that screen readers skip them for ease of use. 
+- All text meets WCAG AA contrast as a minimum, with the combinations and ratios recorded above. 
+- Semantic HTML5 elements convey document structure, so headings and landmarks are meaningful to anyone using assistive technology rather than just visually.
+- Information is never presented using colour alone. Anything distinguished by colour is also distinguished by text, position, or an icon. 
+- Interactive elements retain their visible focus state so that the site is navigatable by keyboard. 
+- Font sizes are set in relative units so they respond to browser text-size settings. 
+
+#### Design Decisions That Depart from Convention
+No deliberate departures from accepted UX or design convetion were made. The single case where an instinctive design choice was rejected on accessibility grounds was red text on a near-black background to imitate neon signage is doucmented under [contrast ratios](#contrast-ratios) above, along with the pairing used instead. 
