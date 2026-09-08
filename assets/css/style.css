@@ -29,3 +29,115 @@ body {
     line-height: 1.6;
 }
 
+h1, h2, h3 {
+    font-family: var(--font-display);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+a {
+    color: var(--deep-red);
+}
+
+a:hover, a:focus {
+    color: var(--diner-red);
+}
+
+/* Visble focus states for anyone who uses a keyboard to navigate */
+
+a:focus-visible, button:focus-visible {
+    outline: 3px solid var(--diner-red);
+    outline-offset: 2px;
+}
+
+/* Section styling - alternates light and dark bands down the page and has differing accents between the two as per WCAG */
+
+.section-light {
+    background-color: var(--cream);
+    color: var(--ink);
+    padding: var(--section-padding);
+}
+
+.section-dark {
+    background-color: var(--wood);
+    color: var(--cream);
+    padding: var(--section-padding);
+}
+
+.section-dark a {
+    color: var(--sign-yellow);
+}
+
+/* Header & navigation */
+
+.navbar {
+    background-color: var(--ink);
+}
+
+.navbar-brand {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--cream);
+}
+
+.navbar-brand:hover, .navbar-brand:focus {
+    color: var(--sign-yellow);
+}
+
+.navbar .nav-link {
+    color: var(--cream);
+}
+
+.navbar .nav-link:hover, .navbar .nav-link:focus {
+    color: var(--sign-yellow);
+}
+
+/* current page indicator */
+.navbar .nav-link.active {
+    color: var(--sign-yellow);
+    border-bottom: 2px solid var(--sign-yellow);
+}
+
+/* footer */
+
+footer {
+    background-color: var(--wood);
+    color: var(--cream);
+    padding: 2.5rem 0 1.5rem;
+}
+
+footer h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+footer a {
+    color: var(--sign-yellow);
+}
+
+footer a:hover, footer a:focus {
+    color: var(--amber);
+}
+
+footer address {
+    font-style: normal;
+}
+
+footer dt {
+    font-weight: 700;
+}
+
+footer dd {
+    margin-bottom: 0.75rem;
+}
