@@ -151,8 +151,8 @@ For ease, above the fold is shown with a #FEFCE0 background, and below the fold 
 
 | Page | Mobile | Tablet | Desktop|
 |---|---|---|---|
-| Home | link here | link here | link here |
-| Menu | link here | link here | link here |
+| Home | [link](/assets/images/readme/wireframes/home-mobile.png) | [link](/assets/images/readme/wireframes/home-tablet.png) | [link](/assets/images/readme/wireframes/homeage-desktop.png) |
+| Menu | [link](/assets/images/readme/wireframes/menu-mobile.png) | [link] | link here |
 | About | link here | link here | link here |
 | Contact | link here | link here | link here |
 
@@ -225,3 +225,27 @@ Where text appears over a photograph, a semi-transparent dark overlay is applied
 
 #### Design Decisions That Depart from Convention
 No deliberate departures from accepted UX or design convetion were made. The single case where an instinctive design choice was rejected on accessibility grounds was red text on a near-black background to imitate neon signage is doucmented under [contrast ratios](#contrast-ratios) above, along with the pairing used instead. 
+
+## Features
+
+## Technology Used
+
+[NOTE TO ME: UPDATE THIS ONCE PROJECT READY FOR HAND-IN. YOU'RE JUST KEEPING TRACK FOR NOW.]
+
+Moqups - wireframing for the website
+Github - Version control
+Github Pages - for deployment
+VS Code - IDE for development
+Google Fonts - for font choices
+Canva - to make the logo & edit images
+Bootstrap - To make styling easier
+
+## Testing
+
+## Deployment
+
+## Credits
+[NOTE TO ME: UPDATE THIS ONCE PROJECT READY FOR HAND-IN. YOU'RE JUST KEEPING TRACK FOR NOW.]
+| Source | Used for | Location in project |
+|---|---|---|
+| [Bootstrap 5 documentation - Navbar](https://getbootstrap.com/docs/5.3/components/navbar/) | Responsive navigation bar structure and toggle | `index.html`, `menu.html`, `about.html`, `contact.html`, `404.html` - header |
