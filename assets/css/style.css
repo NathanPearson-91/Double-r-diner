@@ -1,0 +1,31 @@
+/* -- Double R Diner main style sheet. This should load after bootsrap so the rules here override the framework defaults. -- */
+
+/* Custom Properties */
+
+:root {
+    /* Taken from Palette - See README surface section for contrast ratios etc */
+    --diner-red: #c1121f;
+    --deep-red: #8b0f17;
+    --ink: #13100e;
+    --wood: #3b2417;
+    --cream: #f7f1e3;
+    --sign-yellow: #f2c94c;
+    --amber: #e9a319;
+
+    /* Typefaces */
+    --font-display: 'Alfa Slab One', Georgia, 'Times New Roman', serif;
+    --font-body: 'Karla', 'Helvetica Neue', Arial, sans-serif;
+
+    /* Spacing */
+    --section-padding: 3rem 0;
+}
+
+/* Base Typography */
+
+body {
+    background-color: var(--cream);
+    color: var(--ink);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
