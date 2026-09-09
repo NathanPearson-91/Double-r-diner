@@ -141,3 +141,82 @@ footer dt {
 footer dd {
     margin-bottom: 0.75rem;
 }
+
+/* Home Page */
+
+#hero {
+    background-image: url('../images/hero-diner-exterior.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay {
+    background-color: rgba(20, 16, 14, 0.65);
+    color: var(--cream);
+    padding: 5rem 0;
+}
+
+.hero-overlay h1 {
+    color: var(--cream);
+    margin-bottom: 1rem;
+}
+
+.hero-tagline {
+    font-size: 1.15rem;
+    max-width: 34rem;
+    margin-bottom: 0;
+}
+
+/* Shortening the hero band on smaller screens so the content isn't pushed off */
+
+@media (max-width: 768px) {
+    .hero-overlay {
+        padding: 3rem 0;
+    }
+
+    .hero-overlay h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Buttons */
+
+.btn-diner {
+    display: inline-block;
+    background-color: var(--diner-red);
+    color: var(--cream);
+    font-family: var(--font-display);
+    font-size: 0.95rem;
+    padding: 0.6rem 1.4rem;
+    border-radius: 2px;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.btn-diner:hover, .btn-diner:focus {
+    background-color: var(-deep-red);
+    color: var(--cream);
+    text-decoration: underline;
+}
+
+/* Overriding the section-dark link colour so buttons don't have random colours */
+
+.section-dark .btn-diner {
+    color: var(--cream);
+}
+
+/* Home page content */
+
+.hours-list dt {
+    font-weight: 700;
+}
+
+.hours-list dd {
+    margin-bottom: 0.75rem;
+}
+
+.section-light address, .section-light address {
+    font-style: normal;
+    margin-top: 1rem;
+}
