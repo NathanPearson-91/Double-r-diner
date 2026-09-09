@@ -220,3 +220,66 @@ footer dd {
     font-style: normal;
     margin-top: 1rem;
 }
+
+/* Menu Page */
+
+.menu-section {
+    margin-bottom: 2.5rem;
+}
+
+.menu-section h3 {
+    border-bottom: 2px solid var(--diner-red);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.menu-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.menu-item {
+    margin-bottom: 1rem;
+}
+
+/* This puts the name and price on one line. The space between them pushes the price to the right edge, and flex-shrink 0 stops it looking squeezed when a long item name wraps over a line. */
+
+.menu-item-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.75rem;
+}
+
+.menu-item-name {
+    font-weight: 700;
+}
+
+.menu-item-price {
+    flex-shrink: 0;
+    font-weight: 700;
+    color: var(--deep-red);
+}
+
+/* This is for the menu item descriptions, it uses the full col width */
+
+.menu-item-desc {
+    margin: 0.15rem 0 0;
+    font-size: 0.925rem;
+    font-style: italic;
+}
+
+/* Section wide-notes (eg what the meals come with) */
+
+.menu-section-note {
+    margin-top: 1rem;
+    font-size: 0.925rem;
+    font-style: italic;
+}
+
+/* So that the deep red price doesn't fail on contrast against dark backgrounds */
+
+.section-dark .menu-item-price {
+    color: var(--sign-yellow);
+}
