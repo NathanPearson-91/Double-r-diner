@@ -364,3 +364,24 @@ h1 {
     color: var(--deep-red);
     margin-bottom: 0.5rem;
 }
+
+/* Contact page */
+
+.contact-phone {
+    font-size: 1.25rem;
+    font-weight:700;
+    margin-bottom: 0.25rem;
+}
+
+.contact-form {
+    max-width: 32rem;
+}
+
+.contact-form .form-label {
+    font-weight: 700;
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--diner-red);
+    box-shadow: 0 0 0 3px rgba(193, 18, 31, 0.25);
+}
