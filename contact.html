@@ -56,71 +56,81 @@
     </nav>
     </header>
         <main>
-            <!-- Hero here -->
-             <section id="hero" aria-labelledby="hero-heading">
-                <div class="hero-overlay">
-                    <div class="container">
-                        <h1 id="hero-heading">Double R Diner</h1>
-                        <p class="hero-tagline">Damn fine coffee and cherry pie, served to Twin Peaks since 1952.</p>
-                    </div>
-                </div>
-             </section>
-            <!-- Opening hours and location -->
-             <section class="section-light" aria-labelledby="Visit-heading">
+            <!-- Location and opening hours-->
+             <section class="section-light">
                 <div class="container">
-                    <h2 id="visit-heading" class="visually-hidden">Visiting the diner</h2>
+                    <h1>Find Us</h1>
+                    <p class="page-intro">
+                        On the corner of Main Street and Falls Avenue, open every day except christmas.
+                    </p>
                     <div class="row g-4">
-                        <!-- Opening hours -->
-                         <div class="col-12 col-md-6">
-                            <h3>Opening Hours</h3>
-                            <d1 class="hours-list">
-                                <dt>Monday to Friday</dt>
-                                <dd>06:00 to 21:00</dd>
-                                <dt>Saturday &amp; Sunday</dt>
-                                <dd>07:00 to 21:00</dd>
-                            </d1>
-                            <p>The coffee pot is always full, and the grill is always on!</p>
-                         </div>
-
-                         <!-- location -->
-                          <div class="col-12 col-md-6">
-                            <h3>Where to Find Us</h3>
-                            <img src="assets/images/map.png" alt="Map showing the Double R Diner at the intersection of Main Street and Falls Avenue" class="img-fluid">
+                        <div class="col-12 col-md-6">
+                            <h2>Where and When</h2>
                             <address>
                                 Intersection of Main Street and Falls Avenue<br>
                                 Twin Peaks, WA
                             </address>
-                            <a href="contact.html">Directions and Parking</a>
-                          </div>
+                            <p class="contact-phone">
+                                <a href="tel:+15550000000">(555) 000-0000</a>
+                            </p>
+                            <p>
+                                <a href="mailto:hello@doublerdiner.example">hello@doublerdiner.example</a>
+                            </p>
+                            <h3> Opening Hours</h3>
+                            <dl class="hours-list">
+                                <dt>Monday to Friday</dt>
+                                <dd>06:00 to 21:00</dd>
+                                <dt>Saturday &amp; Sunday</dt>
+                                <dd>07:00 to 21:00</dd>
+                            </dl>
+                            <p>
+                                For groups of eight or more, call ahead and we'll get the tables put together for you!
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h2 class="visually-hidden">Map</h2>
+                            <img src="assets/images/map.png" alt="Map showing the Double R Diner at the intersection of Main Street and Falls Avenue, with the Sheriff's department to the west and the Great Northern hotel to the east" class="img-fluid rounded">
+                        </div>
                     </div>
                 </div>
              </section>
-
-            <!-- menu & about teasers -->
-             <section class="section-dark" aria-labelledby="explore-heading">
+            <!-- Getting here -->
+             <section class="section-dark">
                 <div class="container">
-                    <h2 id="explore-heading" class="visually-hidden">Explore the diner</h2>
-                    <div class="row g-4">
-                        <!-- menu teaser -->
-                         <div class="col-12 col-md-6 col-lg-7">
-                            <h3>What's on the Menu?</h3>
-                            <p>
-                                Breakfast served from 06:00, sandwiches and dinners throughout the day, and five kinds of pie on offer. Decide what you're getting before you even sit down!
-                            </p>
-                            <a href="menu.html" class="btn-diner">See the full menu</a>
-                         </div>
-                        <!-- about teaser -->
-                         <div class="col-12 col-md-6 col-lg-5">
-                            <h3>Our Story</h3>
-                            <p>
-                                The same family has run the Double R for over three generations now. The booths are the originals, the pie is made every morning and half the town have sat at our counter at some point.
-                            </p>
-                            <a href="about.html" class="btn-diner">About the diner</a>
-                         </div>
-                    </div>
+                    <h2> Getting Here</h2>
+                    <p>
+                        Coming in from Highway 21, take the Falls Avenue exit and follow it south for around a mile. The diner is on your right at the Main Sreet junction, opposite the Sheriff&rsquote;s Department. Look for the sign, you won't miss us!
+                    </p>
+                    <p>
+                        There is free parking on Main Street outside the diner, and a larger lot behind the building which can be reached from Falls Avenue.
+                    </p>
                 </div>
              </section>
 
+             <!-- Contact form -->
+            <section class="section-light">
+                <div class="container">
+                    <h2> Send us a Message</h2>
+                    <p>
+                        Please only use this form for anything that is not urgent. If you need anything answering today, give us a call! It's much quicker.
+                    </p>
+                    <form action="https://formdump.codeinstitute.net" method="post" class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label"> Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-diner">Send message</button>
+                    </form>
+                </div>
+            </section>
         </main>
         <footer>
         <div class="container">
