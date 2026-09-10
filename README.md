@@ -253,11 +253,33 @@ Google Fonts - for font choices
 Canva - to make the logo & edit images
 Bootstrap - To make styling easier
 Google Gemini (Nano Banana Pro)
-Code Institute form dump - receiving and echoing contact form submissions. 
+Code Institute form dump - receiving and echoing contact form submissions.
+Nu HTML checker - validator.w3.org/nu/
 
 ## Testing
+### Validator Results
+| Page | HTML (W3C) |
+|---|---|
+| index.html | [Pass](assets/images/readme/testing/index-page-validated.png) |
+| menu.html | [Pass](assets/images/readme/testing/menu-page-validaed.png) |
+| about.html | [Pass](assets/images/readme/testing/about-page-validated.png) |
+| contact.html | [Pass] (assets/images/readme/testing/contact-page-validated.png) |
+| 404.html | [Pass](assets/images/readme/testing/404-page-validated.png) |
 
+**CSS (Jigsaw)**
+[CSS Passed validation](assets/images/readme/testing/css-validated.png)
 
+### Lighthouse Scoring
+| Page | Performance | Accessibility | Best Practices | SEO | Link to report |
+|---|---|---|---|---|---|
+| index.html | 91 | 100 | 100 | 100 | [report](assets/lighthouse-reports/index-page-lighthouse.html) |
+| menu.html | 97 | 100 | 100 | 100 | [report](assets/lighthouse-reports/menu-page-lighthouse.html) |
+| about.html | 96 | 100 | 100 | 100 | [report](assets/lighthouse-reports/about-page-lighthouse.html) |
+| contact.html | 96 | 100 | 100 | 100 | [report](assets/lighthouse-reports/contact-page-lighthouse.html) |
+| 404.html | 98 | 100 | 100 | 100 | [report](assets/lighthouse-reports/404-page-lighthouse.html) |
+
+Performance scores aren't always held above 90, this is caused by render-blocking requests and cache lifetimes on the Bootstrap and Google Fonts CDN files. These are external dependencies, served from third-party domains and I cannot modify them from within the project. 
+Accessibility, best practices and SEO score are good across all pages. 
 ## Deployment
 
 ## Credits
