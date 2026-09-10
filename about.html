@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CHANGE PER PAGE -->
+        <meta name="description" content="The history of the Double R Diner in Twin Peaks, WA">
+
+        <title>Our History | Double R Diner</title>
+
+         <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+
+         <!-- bootstrap here, taken from getbootstrap.com -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        
+        <!-- external Google fonts here -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+        <!-- Custom stylesheet here so it loads last to override bootstrap -->
+         <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+    <!--
+    *** This is header and main navigation; needs to be identical everywhere except changing which link has "active" and "aria-current". Both should be the same for the page it's on. ***
+    -->
+    <!-- This navbar structure was adapted from what is provided within the Bootstrap 5 documentation (https://getbootstrap.com/docs/5.3/components/navbar/); I removed dropdown, disabled link and search form, and changed links, IDs and alignment for this site. -->
+    <header>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark" aria-label="Main navigation">
+        <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo.png" alt="Double R Diner logo" width="100" height="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    </header>
+        <main>
+            <!-- Hero here -->
+             <section id="hero" aria-labelledby="hero-heading">
+                <div class="hero-overlay">
+                    <div class="container">
+                        <h1 id="hero-heading">Double R Diner</h1>
+                        <p class="hero-tagline">Damn fine coffee and cherry pie, served to Twin Peaks since 1952.</p>
+                    </div>
+                </div>
+             </section>
+            <!-- Opening hours and location -->
+             <section class="section-light" aria-labelledby="Visit-heading">
+                <div class="container">
+                    <h2 id="visit-heading" class="visually-hidden">Visiting the diner</h2>
+                    <div class="row g-4">
+                        <!-- Opening hours -->
+                         <div class="col-12 col-md-6">
+                            <h3>Opening Hours</h3>
+                            <d1 class="hours-list">
+                                <dt>Monday to Friday</dt>
+                                <dd>06:00 to 21:00</dd>
+                                <dt>Saturday &amp; Sunday</dt>
+                                <dd>07:00 to 21:00</dd>
+                            </d1>
+                            <p>The coffee pot is always full, and the grill is always on!</p>
+                         </div>
+
+                         <!-- location -->
+                          <div class="col-12 col-md-6">
+                            <h3>Where to Find Us</h3>
+                            <img src="assets/images/map.png" alt="Map showing the Double R Diner at the intersection of Main Street and Falls Avenue" class="img-fluid">
+                            <address>
+                                Intersection of Main Street and Falls Avenue<br>
+                                Twin Peaks, WA
+                            </address>
+                            <a href="contact.html">Directions and Parking</a>
+                          </div>
+                    </div>
+                </div>
+             </section>
+
+            <!-- menu & about teasers -->
+             <section class="section-dark" aria-labelledby="explore-heading">
+                <div class="container">
+                    <h2 id="explore-heading" class="visually-hidden">Explore the diner</h2>
+                    <div class="row g-4">
+                        <!-- menu teaser -->
+                         <div class="col-12 col-md-6 col-lg-7">
+                            <h3>What's on the Menu?</h3>
+                            <p>
+                                Breakfast served from 06:00, sandwiches and dinners throughout the day, and five kinds of pie on offer. Decide what you're getting before you even sit down!
+                            </p>
+                            <a href="menu.html" class="btn-diner">See the full menu</a>
+                         </div>
+                        <!-- about teaser -->
+                         <div class="col-12 col-md-6 col-lg-5">
+                            <h3>Our Story</h3>
+                            <p>
+                                The same family has run the Double R for over three generations now. The booths are the originals, the pie is made every morning and half the town have sat at our counter at some point.
+                            </p>
+                            <a href="about.html" class="btn-diner">About the diner</a>
+                         </div>
+                    </div>
+                </div>
+             </section>
+
+        </main>
+        <footer>
+        <div class="container">
+            <h2 class="visually-hidden">Site Footer</h2>
+            <div class="row">
+                <!-- Opening hours -->
+                 <div class="col-12 col-md-4">
+                    <h3>Opening Hours</h3>
+                    <dl>
+                        <dt>Monday to Friday</dt>
+                        <dd>06:00 to 21:00</dd>
+                        <dt>Saturday &amp; Sunday</dt>
+                        <dd>07:00 to 21:00</dd>
+                    </dl>
+                 </div>
+                <!-- Address and phone number -->
+                 <div class="col-12 col-md-4">
+                    <h3>Find Us</h3>
+                    <address>
+                        Intersection of Main Street and Falls Avenue<br>
+                        Twin Peaks, WA<br>
+                        <a href="tel:+15550000000">(555) 000-0000</a><br>
+                        <a href="mailto:hello@doublerdiner.example">hello@doublerdiner.example</a>
+                    </address>
+                 </div>
+                <!-- Social links -->
+                 <div class="col-12 col-md-4">
+                    <h3>Follow Us</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Visit our facebook page! This opens in a new tab">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Visit our instagram page! This opens in a new tab">Instagram</a>
+                        </li>
+                    </ul>
+                 </div>
+            </div>
+            <p><small>&copy; 2026 Double R Diner. This is an unofficial fan site.</small></p>
+        </div>
+    </footer>
+
+    <!-- External bootstrap JS bundle, need this for the navbar toggle to work. MUST be at the bottom of the body section so that the HTML is already loaded before the script is needed. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>
