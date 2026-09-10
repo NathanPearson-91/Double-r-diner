@@ -1,6 +1,5 @@
 Keeping a running to-do list of outstanding tasks here: 
 
-Next job: Copy over re-usable content from the scratch pad for the menu.html page. 
 Then: Build the breakfast section with proper item row pattern (name & price on line, description underneath)
 After: Style that row pattern until it works on desktop, mobile and tablet. 
 Finally: Repeat the pattern for the other 5 sections
