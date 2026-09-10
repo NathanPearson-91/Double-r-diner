@@ -283,3 +283,68 @@ footer dd {
 .section-dark .menu-item-price {
     color: var(--sign-yellow);
 }
+
+/* Page Intro section */
+
+h1 {
+    margin-bottom: 0.5rem;
+}
+
+.page-intro {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Daily Specials */
+/* These need to be the sing yellow band with ink text. The cards inside should be cream so the item text looks the same as the rest of the page. */
+
+.specials {
+    background-color: var(--sign-yellow);
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-bottom: 2.5rem;
+}
+
+.specials h2 {
+    color: var(--ink);
+    margin-bottom: 1rem;
+}
+
+.specials-card {
+    background-color: var(--cream);
+    padding: 1rem;
+    border-radius: 4px;
+    height: 100%;
+}
+
+.specials-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.specials-price {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--deep-red);
+}
+
+/* This puts the day and item side by side and repeats down the specials rota */
+
+.rota {
+    margin-bottom: 0;
+    font-size: 09.rem;
+}
+
+.rota-dt {
+    float: left;
+    clear: left;
+    width: 3.2rem;
+    font-weight: 700;
+}
+
+.rota dd {
+    margin-left: 3.2rem;
+    margin-bottom: 0.2rem;
+}
