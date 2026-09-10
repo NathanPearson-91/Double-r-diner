@@ -385,3 +385,21 @@ h1 {
     border-color: var(--diner-red);
     box-shadow: 0 0 0 3px rgba(193, 18, 31, 0.25);
 }
+
+/* 404 page - styled after deployment as unable to validate locally */
+
+.error-page {
+    min-height: 50vh;
+}
+
+.error-code {
+    font-family: var(--font-display);
+    font-size: 4rem;
+    line-height: 1;
+    color: var(--diner-red);
+    margin-bottom: 0.5rem;
+}
+
+.error-links {
+    margin-bottom: 1.5rem;
+}
