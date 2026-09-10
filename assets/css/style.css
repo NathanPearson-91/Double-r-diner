@@ -195,7 +195,7 @@ footer dd {
 }
 
 .btn-diner:hover, .btn-diner:focus {
-    background-color: var(-deep-red);
+    background-color: var(--deep-red);
     color: var(--cream);
     text-decoration: underline;
 }
@@ -216,7 +216,7 @@ footer dd {
     margin-bottom: 0.75rem;
 }
 
-.section-light address, .section-light address {
+.section-light address, .section-dark address {
     font-style: normal;
     margin-top: 1rem;
 }
@@ -334,10 +334,10 @@ h1 {
 
 .rota {
     margin-bottom: 0;
-    font-size: 09.rem;
+    font-size: 0.9rem;
 }
 
-.rota-dt {
+.rota dt {
     float: left;
     clear: left;
     width: 3.2rem;
