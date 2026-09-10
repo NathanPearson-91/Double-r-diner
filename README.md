@@ -226,6 +226,21 @@ No deliberate departures from accepted UX or design convetion were made. The sin
 
 ## Features
 
+### Existing Features
+#### Contact Form
+A three-field form was created to capture name, email address and a short message. It sits below the practical contact information in `contact.html`. Every field has a visible label rather than a placeholder, and validation is handled through HTML5 attributes: 
+All three fields are `required`, and the email field uses `type="email"` so that the browser checks formatting before allowing the form to be submitted. 
+
+The form itself posts to the Code Institute form dump endpoint, which shows the submitted data back to the user. This confirms to the visitor that their message has been sent, rather than leaving them on a page with no indication of if anything has happened. 
+
+The form is positioned below the address, telephone number and opening hours rather than above them. The most common enquiry the diner is likely to receive is arranging group table bookings, and a telephone call will solve that faster than a message, so the telephone number took precedence in the page order. 
+
+### Features Left to Implement
+
+|Feature | Why deferred |
+|---|---|
+|Contact form delivered to the diner | The form dump endpoint confirms submission to the visitor, but does not deliver the message to a recipient. Routing would require server-side processing, which is outside the scope of this static HTML and CSS project. |
+
 ## Technology Used
 
 [NOTE TO ME: UPDATE THIS ONCE PROJECT READY FOR HAND-IN. YOU'RE JUST KEEPING TRACK FOR NOW.]
@@ -237,8 +252,11 @@ VS Code - IDE for development
 Google Fonts - for font choices
 Canva - to make the logo & edit images
 Bootstrap - To make styling easier
+Google Gemini (Nano Banana Pro)
+Code Institute form dump - receiving and echoing contact form submissions. 
 
 ## Testing
+
 
 ## Deployment
 
@@ -247,3 +265,5 @@ Bootstrap - To make styling easier
 | Source | Used for | Location in project |
 |---|---|---|
 | [Bootstrap 5 documentation - Navbar](https://getbootstrap.com/docs/5.3/components/navbar/) | Responsive navigation bar structure and toggle | `index.html`, `menu.html`, `about.html`, `contact.html`, `404.html` - header |
+| Google Gemini (Nano Banana Pro) | Image creation to ensure continuity across the site | `about.html` |
+| [Code Institute form dump endpoint](https://formdump.codeinstitute.net) | Form action target, provided for student projects | `contact.html` contact form |
