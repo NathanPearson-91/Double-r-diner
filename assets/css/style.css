@@ -348,3 +348,19 @@ h1 {
     margin-left: 3.2rem;
     margin-bottom: 0.2rem;
 }
+
+/* About page */
+
+.person-card img {
+    margin-bottom: 0.75rem;
+}
+
+.person-card h3 {
+    margin-bottom: 0.15rem;
+}
+
+.person-role {
+    font-weight: 700;
+    color: var(--deep-red);
+    margin-bottom: 0.5rem;
+}
